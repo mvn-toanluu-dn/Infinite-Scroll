@@ -3,8 +3,6 @@ import React from "react";
 const Item = ({ user }) => {
   return (
     <li className="user-item">
-      <div className="user-cover">
-      </div>
       <div className="user-avatar">
         <img src={user.avatar} alt={user.avatar} />
       </div>
