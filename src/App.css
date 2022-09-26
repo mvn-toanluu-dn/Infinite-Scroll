@@ -17,9 +17,10 @@ li {
 .user-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 210px;
-  gap: 20px;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  gap: 40px;
   padding-left: 0;
 }
 .user-name {
@@ -33,7 +34,7 @@ li {
 .user-avatar {
   width: 125px;
   height: 125px;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 .user-avatar img {
   border-radius: 50%;
@@ -50,20 +51,24 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 32%;
-  height: 320px;
+  width: 40%;
   border: 2px solid rgba(255, 255, 255, 0.568);
   box-shadow: rgba(149, 182, 211, 0.48) 6px 6px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   animation: fadeInMove 1s ease-in-out;
   border-radius: 10px;
   margin: 10px 0;
+  padding: 15px 0;
 }
 @keyframes fadeInMove {
   0% {
-    transform: translateY(100px);
+    transform: translateY(5px) scale(1.05);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.02);
+
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }

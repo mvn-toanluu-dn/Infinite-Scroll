@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const Item = ({ user }) => {
+const Item = ({ user,index }) => {
+    useEffect(()=>{
+       const items = document.querySelectorAll('.user-item');
+       items[index].style.animationDelay = `${index / 10}s`
+    },[index])
   return (
     <li className="user-item">
       <div className="user-avatar">
