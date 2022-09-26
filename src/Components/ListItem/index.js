@@ -2,12 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import Item from "../Modules/Item/index";
 
 const User = () => {
-//   const limitNumber = 2;
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [pageNumber, setPageNumber] = useState(1);
   const [totalPage, setTotalPage] = useState();
-//   const [limit, setLimit] = useState(limitNumber);
   const userRef = useRef();
   useEffect(() => {
     const getData = async (load) => {
@@ -32,7 +30,6 @@ const User = () => {
         userRef.current.clientHeight + userRef.current.offsetTop
       ) {
           setLoading(true);
-        //   setLimit(limit + limitNumber);
           if (pageNumber < totalPage) {
               setPageNumber(pageNumber + 1);
             }
